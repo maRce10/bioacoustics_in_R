@@ -7,6 +7,9 @@
 url: "https://marce10.github.io/bioacoustics_in_R"
 baseurl: ""
 
+# following https://beautifuljekyll.com/getstarted/#install-steps-hard
+remote_theme: daattali/beautiful-jekyll@5.0.0
+
 # If you are building a GitHub project page then use these settings:
 #url: "http://username.github.io/projectname"
 #baseurl: "https://github.com/maRce10/marce10.github.com"
@@ -198,8 +201,3 @@ gems:
 
 exclude: vendor
 
-#plugins_dir:
-#  - jekyll-feed
-
-# Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189
