@@ -82,7 +82,7 @@ tail.cntours <-seltailor(X = lbh_selec_table[1:5, ], ts.df = cntours,
 
 ![seltailor.contour](/img/seltailor.contour.gif)
 
-These signals are far from ideal to do frequency contour tracking, but they help to make the point. As you can see, this is an interactive function in which the user can adjust the frequency of specific points by clicking on the desired frequency. More details about the function can be found [on this post](https://marce10.github.io/2017/08/03/Fixing_selections_manually.html) and in the [function's documentation](https://marce10.github.io/warbleR/reference/seltailor.html).
+These signals are far from ideal to do frequency contour tracking, but they help to make the point. As you can see, this is an interactive function in which the user can adjust the frequency of specific points by clicking on the desired frequency. More details about the function can be found [on this post](https://marce10.github.io/bioacoustics_in_R/2017/08/03/Fixing_selections_manually.html) and in the [function's documentation](https://marce10.github.io/warbleR/reference/seltailor.html).
 
 Hope that helps!
 

@@ -45,7 +45,7 @@ par(mar = c(2, 1.5, 0, 0))
 
 ```
 
-Now let's simulate a song with "jumping" dominant frequency using the (also new) `sim_songs` function (the `sim_songs` function was fully explained in [a previous post](https://marce10.github.io/2018/02/22/Simulating_animal_vocalizations.html)). To accomplish this we simulate 2 songs that both start and end at the same frequency (4 kHz). We skip the gap (i.e. silence) at the end of the first song and at the beginning of the second one, so when with paste them together the sound looks like a continuous frequency trace (a single song): 
+Now let's simulate a song with "jumping" dominant frequency using the (also new) `sim_songs` function (the `sim_songs` function was fully explained in [a previous post](https://marce10.github.io/bioacoustics_in_R/2018/02/22/Simulating_animal_vocalizations.html)). To accomplish this we simulate 2 songs that both start and end at the same frequency (4 kHz). We skip the gap (i.e. silence) at the end of the first song and at the beginning of the second one, so when with paste them together the sound looks like a continuous frequency trace (a single song): 
 
 But first let's define some parameters needed for simulations and spectrograms: 
 

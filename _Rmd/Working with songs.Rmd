@@ -224,7 +224,7 @@ kbl
 
 ```
 
-Finally, extended selection tables, which are objects containing both annotations and acoustic data ([see this post](https://marce10.github.io/2018/05/15/Extended_selection_tables.html)), can be created at the song level. This means that all elements in a song will be contained in a single wave object within the selection table. This enables users to take song level metrics as those described above using this type of objects (this is not possible when creating them based on elements, which is the default behavior).   
+Finally, extended selection tables, which are objects containing both annotations and acoustic data ([see this post](https://marce10.github.io/bioacoustics_in_R/2018/05/15/Extended_selection_tables.html)), can be created at the song level. This means that all elements in a song will be contained in a single wave object within the selection table. This enables users to take song level metrics as those described above using this type of objects (this is not possible when creating them based on elements, which is the default behavior).   
 
 The song level extended selection table can be created using the argument 'by.song', which takes the song label column, as follows:
 

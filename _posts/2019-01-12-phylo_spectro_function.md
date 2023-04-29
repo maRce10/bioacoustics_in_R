@@ -92,7 +92,7 @@ pal = reverse.topo.colors, res = 300)
 <img src="/assets/Rfig/phylo.spectro 3-1.png" title="plot of chunk phylo.spectro 3" alt="plot of chunk phylo.spectro 3" width="800px" />
 
 
-Here is another example using an [extended selection table](https://marce10.github.io/2018/05/15/Extended_selection_tables.html) and more signals:
+Here is another example using an [extended selection table](https://marce10.github.io/bioacoustics_in_R/2018/05/15/Extended_selection_tables.html) and more signals:
 
 
 {% highlight r %}

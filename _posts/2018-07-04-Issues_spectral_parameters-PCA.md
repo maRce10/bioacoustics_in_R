@@ -35,7 +35,7 @@ cmc <- function(n) rep(adjustcolor(brewer.pal(5, "Spectral"),
 
 
 
-As in the [previous post](https://marce10.github.io/2018/06/29/Frequency_range_detection_from_spectrum.html), we will run the comparison on signals detected on a recording from a male [Striped-throated Hermit (*Phaethornis striigularis*)](https://neotropical.birds.cornell.edu/Species-Account/nb/species/stther2/overview) from [Xeno-Canto](http://xeno-canto.org). We can download the sound file and convert it into wave format as follows:
+As in the [previous post](https://marce10.github.io/bioacoustics_in_R/2018/06/29/Frequency_range_detection_from_spectrum.html), we will run the comparison on signals detected on a recording from a male [Striped-throated Hermit (*Phaethornis striigularis*)](https://neotropical.birds.cornell.edu/Species-Account/nb/species/stther2/overview) from [Xeno-Canto](http://xeno-canto.org). We can download the sound file and convert it into wave format as follows:
 
 
 {% highlight r %}
@@ -87,7 +87,7 @@ snr <- sig2noise(ad, mar = 0.05, type = 3)
 ad <- snr[rank(-snr$SNR) <= 100, ]
 {% endhighlight %}
 
-... and measure the frequency range (as in the [previous post](https://marce10.github.io/2018/06/29/Frequency_range_detection_from_spectrum.html)):
+... and measure the frequency range (as in the [previous post](https://marce10.github.io/bioacoustics_in_R/2018/06/29/Frequency_range_detection_from_spectrum.html)):
 
 
 {% highlight r %}
@@ -96,7 +96,7 @@ fr_ad <- freq_range(X = ad, bp = c(2, 12), fsmooth = 0.001,
                     img = FALSE, impute = TRUE)
 {% endhighlight %}
 
-Finally, let's pack the acoustic data and metadata together as a 'extended_selection_table' ([check this post to learn more about these objects](https://marce10.github.io/2018/05/15/Extended_selection_tables.html)):
+Finally, let's pack the acoustic data and metadata together as a 'extended_selection_table' ([check this post to learn more about these objects](https://marce10.github.io/bioacoustics_in_R/2018/05/15/Extended_selection_tables.html)):
 
 
 
@@ -191,7 +191,7 @@ Most clusters include several different element types and the same element type 
 
 ## An alternative
 
-When working with pure tone modulated whistles, the best approach is likely measuring [dynamic time warping](https://marce10.github.io/2016/09/12/Similarity_of_acoustic_signals_with_dynamic_time_warping_(DTW).html) distances on dominant frequency contours. We can do all that at once using `df_DTW`: 
+When working with pure tone modulated whistles, the best approach is likely measuring [dynamic time warping](https://marce10.github.io/bioacoustics_in_R/2016/09/12/Similarity_of_acoustic_signals_with_dynamic_time_warping_(DTW).html) distances on dominant frequency contours. We can do all that at once using `df_DTW`: 
 
 
 {% highlight r %}
@@ -199,7 +199,7 @@ df <- df_DTW(X = est, wl = 200, threshold = 15, img = FALSE,
              clip.edges = TRUE, bp =  c(2, 10))
 {% endhighlight %}
 
-To convert this distance matrix to a rectangular data frame we can use TSNE ([check out this awesome post about it](https://marce10.github.io/2018/05/15/Extended_selection_tables.html)). The name stands for *T-distributed Stochastic Neighbor Embedding* and is regarded as a more powerful way to find data structure than PCA (and yes, it can also be applied to non-distance matrices). The method can be easily run in **R** using the `Rtsne` function from the package of the same name. The following code does the clustering and cataloging as we did above:
+To convert this distance matrix to a rectangular data frame we can use TSNE ([check out this awesome post about it](https://marce10.github.io/bioacoustics_in_R/2018/05/15/Extended_selection_tables.html)). The name stands for *T-distributed Stochastic Neighbor Embedding* and is regarded as a more powerful way to find data structure than PCA (and yes, it can also be applied to non-distance matrices). The method can be easily run in **R** using the `Rtsne` function from the package of the same name. The following code does the clustering and cataloging as we did above:
 
 
 {% highlight r %}
