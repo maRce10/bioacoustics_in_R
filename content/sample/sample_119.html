@@ -1,0 +1,37 @@
+---
+title: Code Sample
+subtitle: Using Hugo or Pygments
+date: 2016-03-08
+tags: ["example", "code"]
+---
+
+
+
+<p>The following are two code samples using syntax highlighting.</p>
+<!--more-->
+<p>The following is a code sample using triple backticks ( ``` ) code fencing provided in Hugo. This is client side highlighting and does not require any special installation.</p>
+<pre class="r"><code>    var num1, num2, sum
+    num1 = prompt(&quot;Enter first number&quot;)
+    num2 = prompt(&quot;Enter second number&quot;)
+    sum = parseInt(num1) + parseInt(num2) // &quot;+&quot; means &quot;add&quot;
+    alert(&quot;Sum = &quot; + sum)  // &quot;+&quot; means combine into a string</code></pre>
+<ul>
+<li>CIRCOS</li>
+<li>MAF</li>
+</ul>
+<p>The following is a code sample using the “highlight” shortcode provided in Hugo. This is server side highlighting and requires Python and Pygments to be installed.</p>
+<p>{{&lt; highlight javascript &gt;}}
+var num1, num2, sum
+num1 = prompt(“Enter first number”)
+num2 = prompt(“Enter second number”)
+sum = parseInt(num1) + parseInt(num2) // “+” means “add”
+alert(“Sum =” + sum) // “+” means combine into a string
+{{&lt;/ highlight &gt;}}</p>
+<p>And here is the same code with line numbers:</p>
+<p>{{&lt; highlight javascript “linenos=inline”&gt;}}
+var num1, num2, sum
+num1 = prompt(“Enter first number”)
+num2 = prompt(“Enter second number”)
+sum = parseInt(num1) + parseInt(num2) // “+” means “add”
+alert(“Sum =” + sum) // “+” means combine into a string
+{{&lt;/ highlight &gt;}}</p>
