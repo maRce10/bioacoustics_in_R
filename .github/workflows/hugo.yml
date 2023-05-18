@@ -68,5 +68,5 @@ jobs:
         if: >
           success()
           && github.ref == 'refs/heads/master'
-          && github.repository == 'maRce10/bioacoustics_in_R'
+          && github.repository == 'halogenica/beautifulhugo'
         uses: actions/deploy-pages@v1
