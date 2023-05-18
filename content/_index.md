@@ -3,3 +3,5 @@ The advantage of R over most common sound analysis software (e.g. Raven, SAP, Av
 Most of the tools I have developed for acoustic analysis are now available in the packages [warbleR](https://marce10.github.io/warbleR), [Rraven](https://marce10.github.io/Rraven), [baRulho](https://marce10.github.io/baRulho), [PhenotypeSpace](https://marce10.github.io/PhenotypeSpace/) and [dynaSpec](https://marce10.github.io/dynaSpec/). I will also post R scripts to detail the usage of new additions to this package.
 
 Sound analysis in R has been made possible owing to the awesome package [seewave](https://cran.r-project.org/package=seewave). I recommend taking a look at [Seewave’s website](http://rug.mnhn.fr/seewave) to learn more about its different tools. I also include code containing functions from the packages [monitoR](https://cran.r-project.org/package=monitoR), [tuneR](https://cran.r-project.org/package=tuneR), [bioacoustics](https://cran.r-project.org/package=bioacoustics) and [soundgen](https://cran.r-project.org/package=soundgen).
+
+
