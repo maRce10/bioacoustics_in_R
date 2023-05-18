@@ -1,4 +1,4 @@
-baseurl = "https://marce10.github.io/bioa"
+baseurl = "marce10.github.io/bioacoustics_in_R/"
 DefaultContentLanguage = "en"
 title = "Bioacoustics in R"
 theme = "beautifulhugo"
@@ -8,8 +8,8 @@ pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
 #pygmentsUseClassic = true
 #pygmentOptions = "linenos=inline"
-#disqusShortname = "XXX"
-#googleAnalytics = "XXX"
+disqusShortname = "maRce_10"
+googleAnalytics = "G-RZVLSR0L9P"
 
 ignoreFiles = [ "\\.Rmd$", "\\.qmd$", "\\.ipynb$", "\\.py$" ]
 [markup.goldmark.renderer]
